@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+    <body>
+        <h2>
+            Text input fields
+        </h2>
+        <form method='POST' action = '/predict'>
+            <label for=name>Firstname</label>
+            <input type = 'text' name = 'firstname' id = 'fname' placeholder='firstname' required = '*mandatory'><br></input>
+            <label for=name>Lastname</label>
+            <input type = 'text' name = 'lastname' id = 'lname' placeholder='lastname' required = '*mandatory'><br></input>
+            <label for=name>Email</label>
+            <input type = 'email' name = 'email' id = 'mail' placeholder='mail id' required = '*mandatory'><br></input>
+            <label for=name>Phone number</label>
+            <input type = 'number' name = 'phone number' id = 'number' placeholder='phone number' required = '*mandatory'><br><br></input>
+            <button type="submit">
+                Predict
+            </button>
+        </form>
+        {{predict}}
+        <p>Note the form itself is not visible</p>
+
+    </body>
+</html>
